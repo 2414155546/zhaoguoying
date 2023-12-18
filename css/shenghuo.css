@@ -1,0 +1,411 @@
+h1,h2,h3,h4,h5,h6,body,p,ul,form,dl,dd,dt{
+    padding: 0;
+    margin: 0;
+}
+ul,li,p,body{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:visited{
+    color: #000;
+}
+img{
+    border: none;
+    display: block;
+}
+/* 赵国迎的移动端 */
+
+body{  /*整个网页*/
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #eee;
+    margin-bottom: 50px;
+}
+
+:root{
+    font-size: 5.6vw;
+    /* rem */
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+  /* footer */
+  .bnav{
+
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: #eee;
+  }
+  .bnav div{
+    position: relative;
+  }
+
+  .bnav>ul{
+    display: flex;
+  }
+  .bnav>ul>li{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bnav svg{
+    font-size: 30px;
+    margin: 3px 0;
+  }
+  .bnav p{
+  font-size: 12px;
+  line-height: 12px;
+  color: #333;
+  margin: 0 0;
+  }
+
+  /* 搜索框 */
+  .search{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+  }
+  .top{
+    display: flex;
+    margin: 5px;
+  }
+  .top li:nth-child(1){
+    display: flex;
+    margin: 0 8px;
+
+  }
+  .top li:nth-child(1) svg{
+    line-height: 25px;
+  }
+  .top li:nth-child(2){
+    width: 70%;
+  }
+  .top li:nth-child(2) div{
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .top li:nth-child(1) p{
+    font-size: 15px;
+    margin: 0;
+  }
+  .top li:nth-child(3) svg{
+    margin-left: 60px;
+    position: fixed;
+    top: 6px;
+    right: 20px;
+  }
+
+  
+/* slide */
+.slide{
+  overflow: hidden;
+}
+.slide>ul{
+  width: 500%;
+  display: flex;
+  animation: zhao 10s infinite ;
+}
+.slide li{
+  width: 20%;
+  height:300px;
+}
+.slide img{
+  width: 100%;
+}
+@keyframes zhao {
+10%{
+    margin-left: 0;
+}
+20%{
+    margin-left: -100%;
+}
+30%{
+    margin-left: -100%;
+}
+40%{
+    margin-left: -200%;
+}
+50%{
+    margin-left: -200%;
+}
+60%{
+    margin-left: -300%;
+}
+70%{
+    margin-left: -300%;
+}
+80%{
+    margin-left: -400%;
+}
+90%{
+    margin-left: -400%;
+}
+100%{
+    margin-left: 0;
+}
+}
+
+/* 盒子 */
+.box1{
+  width: calc(100vw - 20px);
+  background-color: #f7ebd5;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 10px 10px;
+  
+}
+.box1>ul{
+  display: flex;
+}
+.box1 li{
+  display: flex;
+}
+.box1 li div:nth-child(1){
+  width: 80vw;
+}
+.box1>ul>li{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.box1 svg{
+  font-size: 30px;
+  margin: 8px 0;
+  justify-content: center;
+  width: 100px;
+  text-align: center;
+}
+ .box1 p{
+font-size: 12px;
+line-height: 12px;
+color: #000;
+margin: 0 ;
+text-align: center;
+}
+
+/* 盒子2 */
+.box2{
+  width: calc(100vw - 20px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(to right,#fff, #ffd3c3);
+}
+.box2-t{
+  display: flex;
+}
+.box2-t p:nth-child(1){
+  width: 70vw;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #884200;
+}
+.json{
+  width: 50vw;
+}
+.s2{
+  width: 50%;
+
+  overflow: hidden;
+}
+.box2-content{
+  display: flex;
+}
+.right{
+  width: calc(50vw - 40px);
+   border-radius: 10px;
+   background-color: #fff;
+   margin-right: 10px;
+}
+.right img{
+   height: 40px;
+   margin: 15px 0;
+}
+.right p{
+  font-size: 15px;
+}
+
+
+.jlist{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* height: 33%; */
+  margin: 0px 5px;
+}
+
+.s4 {
+  width: 35vw;
+  height: 250px;
+}
+
+.s4 img{
+  width: 35vw;
+  height: 250px;
+}
+.s6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.s6:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+.s6:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.s6:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.s6:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+.s6:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.s6:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.s6:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.s6:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.s6:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.s6:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
+
+
+
+
+/* 生活缴费 */
+.box3{
+  width: calc(100vw - 20px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding-bottom: 5px;
+}
+.box3 ul{
+  margin: 5px 8px;
+}
+.box3 div{
+  display: flex;
+}
+.box3 div div:nth-child(1){
+  width: 70vw;
+  margin: 5px;
+}
+.box3 div div:nth-child(2){
+  margin: 5px;
+}
+.box3 li {
+  display: flex;
+  margin: 6px 6px;
+  background-color: #d0eaef;
+  border-radius: 10px;
+}
+.box3 svg,p{
+  margin: 15px 5px;
+}
+.box3 p:nth-child(2){
+  width: 50vw;
+}
+.box3 p:nth-child(3){
+  border: 1px solid #878484;
+  border-radius: 8px;
+}
+.box3 div{
+   margin: 5px 10px;
+}
+
+/* box4 swiper */
+.box4{
+  width: calc(100vw - 20px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px 10px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(to right,#fff, #b67fd0);
+}
+.box4-t{
+  display: flex;
+}
+.box4 div div:nth-child(1){
+  width: 70vw;
+  margin: 5px;
+}
+.box4 div div:nth-child(2){
+  margin: 5px;
+}
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.s8 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 144px;
+  height: 200px;
+}
+
+.s8 img {
+  display: block;
+  width: 100%;
+  /* height: 100%;  */
+  min-height:100px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.s7 p:nth-child(3){
+  background-color: #08e4d1;
+  color: #fff;width: calc(100% - 70px);
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+} 
+
+/* null */
+.null{
+  height: 50px;
+}

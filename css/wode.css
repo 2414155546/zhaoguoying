@@ -1,0 +1,310 @@
+h1,h2,h3,h4,h5,h6,body,p,ul,form,dl,dd,dt{
+    padding: 0;
+    margin: 0;
+}
+ul,li,p,body{
+    list-style: none;
+}
+body{
+  background-color: #eee;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:visited{
+    color: #000;
+}
+img{
+    border: none;
+    display: block;
+}
+/* 赵国迎的移动端 */
+
+body{  /*整个网页*/
+    min-width: 320px;
+    margin: 0 auto;
+   
+    margin-bottom: 50px;
+}
+
+:root{
+    font-size: 5.6vw;
+    /* rem */
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+  /* footer */
+  .bnav{
+
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: #eee;
+  }
+  .bnav div{
+    position: relative;
+  }
+
+  .bnav>ul{
+    display: flex;
+  }
+  .bnav>ul>li{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bnav svg{
+    font-size: 30px;
+    margin: 3px 0;
+  }
+  .bnav p{
+  font-size: 12px;
+  line-height: 12px;
+  color: #333;
+  margin: 0 0;
+  }
+
+                                /*   上导航 */
+.top{
+  display: flex;
+  background-color: #fff;
+  height: 40px;
+}
+.top li:nth-child(1){
+  width: 70%;
+  margin-left: 20px;
+}
+.top li:nth-child(1) svg{
+  position: fixed;
+  top: 5px;
+  left: 10px;
+}
+.top li:nth-child(2) svg{
+  position: fixed;
+  top: 5;
+right: 70px;
+}
+.top li:nth-child(3) svg{
+  position: fixed;
+  top: 5;
+  right: 40px;
+}
+.top li:nth-child(4) svg{
+  position: fixed;
+  top: 5;
+right: 10px;
+}
+.top li{
+  margin: 10px;
+}
+.search{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.search svg{
+  width: 20px;
+  height: 20px;
+}
+
+                                       /* 头像 */
+
+.head{
+    display: flex;
+    margin-top: 40px;
+}
+.head div{
+  margin: 5px;
+}
+.head svg{
+  font-size: 50px;
+  background-color: #757171;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 0;
+
+}
+.head p:nth-child(1){
+  font-size: 25px;
+}
+.head p{
+  font-size: 15px ;
+  margin: 3px;
+}
+.one{
+  display: flex;
+  width: 100%;
+}
+.one li{
+  width: 25%;
+  justify-content: center;
+}
+.one li  p{
+  text-align: center;
+  font-size: 15px;
+}
+
+/* 账户总览 */
+.account{
+  background-color: #2c3848;
+  margin: 10px;
+  border-radius: 5px;
+}
+.account p{
+  margin: 10px;
+  border: 5px;
+  padding: 5px;
+  color: #fff;
+}
+.account p:nth-child(2){
+   font-size: 15px;
+}
+
+/* 本月收支 */
+.shouzhi{
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+}
+.shouzhi p{
+  margin: 10px;
+  border: 5px;
+  padding: 5px;
+  color: #000;
+}
+.shouzhi p:nth-child(2){
+   font-size: 15px;
+}
+.shouzhi p:nth-child(3){
+  font-size: 15px;
+  color: #00b7ff;
+}
+
+/* 我的消费信用卡 */
+.xiaofei{
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+}
+.xiaofei p{
+  margin: 10px;
+  border: 5px;
+  padding: 5px;
+  color: #000;
+}
+.xiaofei p:nth-child(2){
+   font-size: 15px;
+}
+.xiaofei p:nth-child(3){
+  font-size: 15px;
+  color: #3e3b3b;
+}
+.inner{
+  display: flex;
+}
+.inner img{
+  width: 70px;
+  height: 70px;
+  text-align: right;
+}
+/* 招联 */
+.zhaolian{
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+}
+.zhaolian p{
+  margin: 10px;
+  border: 5px;
+  padding: 5px;
+  color: #000;
+}
+.zhaolian p:nth-child(2){
+   font-size: 15px;
+}
+.zhaolian p:nth-child(3){
+  font-size: 15px;
+  color: #00b7ff;
+}
+
+/* 更多服务 */
+.more{
+  width: 100%;
+}
+.more div{
+  background-color: #fff;
+  width: 50%;
+  border-radius: 10px;
+  margin: 8px;
+}
+.more li{
+  display: flex;
+}
+/* 第一个盒 */
+.more div:nth-child(1) p:nth-child(1){
+    margin: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.more div:nth-child(1) p{
+  padding: 5px;
+  font-size: 15px;
+
+}
+.more div:nth-child(1) svg{
+  font-size: 40px;
+  padding: 5px;
+  padding-top: 10px;
+}
+.more div:nth-child(1) p:nth-child(4){
+  color: #00b7ff;
+}
+/* 第二个盒 */
+.more div:nth-child(2) p:nth-child(1){
+  margin: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.more div:nth-child(2) p{
+padding: 5px;
+font-size: 15px;
+
+}
+.more div:nth-child(2) p:nth-child(3){
+  color: #00b7ff;
+}
+/* 第三个盒子 */
+.zhuli{
+  display: flex;
+  width: 100%;
+}
+.zhuli div:nth-child(1){
+  width: 30%;
+}
+.zhuli div:nth-child(2){
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.last svg{
+  width: 40%;
+}
+.last p{
+  width: 80%;
+}

@@ -1,0 +1,408 @@
+h1,h2,h3,h4,h5,h6,body,p,ul,form,dl,dd,dt{
+    padding: 0;
+    margin: 0;
+}
+ul,li,p,body{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:visited{
+    color: #000;
+}
+img{
+    border: none;
+    display: block;
+}
+/* 赵国迎的移动端 */
+
+body{  /*整个网页*/
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #eee;
+    margin-bottom: 50px;
+}
+
+:root{
+    font-size: 5.6vw;
+    /* rem */
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+                                        /*header*/
+ .top{
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #eee;
+ }
+  .search{
+    display: flex;
+    height: 40px;
+  }
+  .search li:nth-child(1){
+    width: 10%;
+    justify-content: center;
+  }
+  .search li:nth-child(1) svg{
+    position: fixed;
+    left: 10px;
+    top: 6px;
+  }
+  .search li:nth-child(2){
+    width: 70%;
+    justify-content: center;
+    display: flex;
+  }
+  .search li:nth-child(2) div{
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 70vw;
+  }
+  .search li:nth-child(2) div svg{
+    position: fixed;
+    top: 6px;
+  }
+  .search li:nth-child(2) div input{
+    position: fixed;
+    margin-left: 30px;
+    top: 6px;
+
+  }
+  #search{
+    border: none;
+    outline: none;/*轮廓*/
+    flex-grow: 2;
+    margin-right: 20px;
+    background-color: #eee;
+    font-size: 19px;
+}
+  .search li:nth-child(3){
+    width: 10%;
+    justify-content: center;
+  }
+  .search li:nth-child(3) svg{
+    position: fixed;
+    right: 45px;
+    top: 6px;
+  }
+  .search li:nth-child(4){
+    width: 10%;
+    justify-content: center;
+  }
+  .search li:nth-child(4) svg{
+    position: fixed;
+    right: 10px;
+    top: 6px;
+  }
+  .top svg{
+    width: 30px;
+    height: 30px;
+  }
+                                        /* 赢200万红包 */
+   .wan{
+    background-color: #F05D65;
+    margin-top: 40px;
+   }
+  .wan>ul{
+    display: flex;
+
+  }
+  .wan>ul>li{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  .wan>ul>li svg{
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .wan>ul>li p{
+    font-size: 12px;
+    color: #eee;
+    text-align: center;
+  }
+  .wan img{
+    width: 100%;
+  }
+                                      /* box1 */
+  .box1{
+    width: 100%;
+    background-color: #eee;
+    margin: 5px 5px;
+    border-radius: 10px;
+  }
+  .box1>ul{
+    display: flex;
+  }
+  .box1>ul>li{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .box1 svg{
+    font-size: 30px;
+    margin: 8px 0;
+    justify-content: center;
+    width: 100%;
+  }
+   .box1 p{
+  font-size: 12px;
+  line-height: 12px;
+  color: #000;
+  margin: 0 ;
+  text-align: center;
+  }
+                                            /* greet */
+  .greet{
+    display: flex;
+    margin: 8px 5px;
+    background-color: #eee;
+  }
+  .greet div{
+    border-radius: 2%;
+    display: flex;
+    background-color: #eee;
+    border-radius: 8px;
+  }
+  .greet div .icon,p{
+    font-size: 20px;
+  } 
+                                    /*  slide*/
+  .slide{
+    overflow: hidden;
+  }
+.slide>ul{
+    width: 500%;
+    display: flex;
+    animation: zhao 10s infinite ;
+}
+.slide li{
+    width: 20%;
+}
+.slide img{
+    width: 100%;
+}
+@keyframes zhao {
+  10%{
+      margin-left: 0;
+  }
+  20%{
+      margin-left: -100%;
+  }
+  30%{
+      margin-left: -100%;
+  }
+  40%{
+      margin-left: -200%;
+  }
+  50%{
+      margin-left: -200%;
+  }
+  60%{
+      margin-left: -300%;
+  }
+  70%{
+      margin-left: -300%;
+  }
+  80%{
+      margin-left: -400%;
+  }
+  90%{
+      margin-left: -400%;
+  }
+  100%{
+      margin-left: 0;
+  }
+}
+/* 财富精选 */
+.cf{
+  width: 100%;
+}
+.cf p{
+  margin-left: 5px;
+}
+.cf-t{
+  display: flex;
+}
+.cf-t p:nth-child(1){
+   width: 80vw;
+   font-size: 20px;
+}
+.cf-t p:nth-child(2){
+  font-size: 15px;
+  line-height: 18px;
+}
+.cf-c{
+  display: flex;
+  width: 100%;
+}
+.cf-l{
+  width: 50%;
+  margin: 10px 10px;
+  background-color: #ffb9b9;
+  border-radius: 10px;
+  padding: 5px;
+}
+.cf-l p:nth-child(1){
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.cf-l p:nth-child(2){
+  font-size: 13px;
+}
+.cf-l p:nth-child(3){
+  font-size: 25px;
+  color: #cd5353;
+  margin-top: 10px;
+}
+.cf-l p:nth-child(4){
+  font-size: 15px;
+  color: #cd5353;
+}
+.cf-l p:nth-child(5){
+  font-size: 15px;
+  margin-top: 10px;
+}
+.cf-l p:nth-child(6){
+  width: 50px;
+  font-size: 15px;
+  background-color: #ce4e4e;
+  border-radius: 10px;
+  margin-left: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.cf-r{
+  padding: 5px;
+width: 50%;
+
+  /* margin: 10px 10px; */
+  border-radius: 10px;
+}
+.cf-r p{
+  margin-left: 5px;
+}
+.cf-r div{
+  margin: 0;
+  background-color: #fff;
+  border-radius: 10px;
+
+}
+.cf-r  div p:nth-child(1){
+   font-size: 20px;
+   margin-top: 5px;
+   font-weight: bold;
+} 
+.cf-r  div p:nth-child(2){
+  font-size: 15px;
+} 
+.cf-r  div p:nth-child(3){
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   /*  */
+.jiekuan{
+    width: 100%;
+    margin: auto ;
+    display: flex;
+    border: 5px;
+}
+.one{
+  background-color: #FFF2EC;
+  border-radius: 4%;
+  width: 50%;
+  margin: 16px;
+
+}
+.one div{
+  background-color: #ED4755;
+  width: 40%;
+  border-radius: 10px;
+
+}
+.two{
+  width: 50%;
+}
+.two p{
+  margin-bottom: 0;
+}
+.two div{
+  background-color: #fff;
+  height: 50%;
+  margin: 8px;
+  border: 8px;
+  border-radius: 4%;
+}
+
+
+
+                                         /*fotter*/
+  .bnav{
+
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: #eee;
+  }
+  .bnav div{
+    position: relative;
+  }
+
+  .bnav>ul{
+    display: flex;
+  }
+  .bnav>ul>li{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bnav svg{
+    font-size: 30px;
+    margin: 3px 0;
+  }
+  .bnav p{
+  font-size: 12px;
+  line-height: 12px;
+  color: #333;
+  margin: 0 0;
+  }
+  
